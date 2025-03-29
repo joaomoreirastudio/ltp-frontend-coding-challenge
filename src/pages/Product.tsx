@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductDetails from "../components/ProductDetails/ProductDetails.tsx";
 
-interface ProductDetailsProps {
-    products: any[];
-}
-
 const ProductPage: React.FC = () => {
     const [products, setproducts] = useState([]);
 

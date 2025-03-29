@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import {
     ProductsContainer,
     Product,
@@ -16,7 +15,6 @@ import {
 } from "./ProductsGRID.styled";
 import { useState, useEffect } from "react";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
-import { Link } from "react-router-dom";
 
 interface ProductsGRIDProps {
     products: any[];
@@ -26,10 +24,8 @@ const ProductsGRID: React.FC<ProductsGRIDProps> = ({ products }) => {
     const [limit, setLimit] = useState(9);
     const [categories, setCategories] = useState<string[]>([]);
     const [selectedCategory, setSelectedCategory] = useState<string>("");
-    const [filteredProducts, setFilteredProducts] = useState(products);
     const [productsToShow, setProductsToShow] = useState(products);
-    const [selectedProduct, setSelectedProduct] =
-        useState<ProductsGRIDProps | null>(null);
+    const [, setSelectedProduct] = useState<ProductsGRIDProps | null>(null);
 
     useEffect(() => {
         const categories = Array.from(

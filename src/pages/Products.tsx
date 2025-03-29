@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductsGRID from "../components/ProductsGRID/ProductsGRID.tsx";
 
-interface ProductsGRIDProps {
-    products: any[];
-}
-
 const Products: React.FC = () => {
     const [products, setproducts] = useState([]);
 
