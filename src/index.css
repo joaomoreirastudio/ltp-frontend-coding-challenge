@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Teko:wght@300..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Teko:wght@300..700&display=swap");
+
+:root {
+    --frist: #1f3044;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--frist);
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
