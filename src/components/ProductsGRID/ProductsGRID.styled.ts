@@ -46,6 +46,7 @@ export const ProductsDescription = styled.p`
         max-width: 121rem;
         flex-wrap: wrap;
         gap: 20px;
+        width: 100%;
     }
 `;
 
@@ -77,9 +78,10 @@ export const ProductCategory = styled.div`
     }
 `;
 export const CategoryButton = styled.button<CategoryButtonProps>`
-    background-color: ${(props) => (props.isSelected ? "#ccc" : "#fff")};
-    border: none;
-
+    background-color: ${(props) => (props.isSelected ? "coral" : "white")};
+    color: ${(props) => (props.isSelected ? "white" : "black")};
+    border: 1px solid transparent;
+    border-radius: 5px;
     cursor: pointer;
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -118,6 +120,7 @@ export const FiltersContainer = styled.div`
     @media screen and (min-width: 768px) {
         padding-top: 1.5rem;
         max-width: 122rem;
+        width: 100%;
         flex-wrap: wrap;
         gap: 40px;
     }
@@ -168,9 +171,11 @@ export const Product = styled.div`
         padding-bottom: 1rem;
         text-decoration: none;
         color: inherit;
+        width: 100%;
         h2 {
             position: relative;
             margin-bottom: 0;
+            width: auto;
             &::after {
                 content: "";
                 position: absolute;
@@ -185,13 +190,18 @@ export const Product = styled.div`
         }
 
         &:hover h2::after {
-            width: 40%;
+            width: 7rem;
         }
 
+        p,
         div {
             ${flex("center", "Space-between")};
             width: 100%;
             gap: 1rem;
+        }
+
+        p {
+            padding-top: 1rem;
         }
     }
 `;
