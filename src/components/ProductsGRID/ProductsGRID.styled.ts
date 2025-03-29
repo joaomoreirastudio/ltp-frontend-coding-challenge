@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+
 import { Link } from "react-router-dom";
 
 export const HeartIcon = styled(FontAwesomeIcon)`
